@@ -11,8 +11,7 @@ public sealed class HistoryManager : IHistoryManager
         History = new List<CalculationRecord>();
     }
 
-    ///<summary>Adds one record to the history.///</summary>
-
+    ///<summary>Adds one record to the history.</summary>
     public void Add(CalculationRecord record) => History.Add(record);
 
 

@@ -6,7 +6,7 @@ namespace calculator.businesslogic
 {
     public class Calculator : ICalculator
     {
-        List<IOperation> operations;
+        List<IOperation> operations; // list of available operations.
         public Calculator()
         {
             operations = new List<IOperation>()
@@ -18,6 +18,7 @@ namespace calculator.businesslogic
             };
         }
 
+        ///<summary>Finds an operation by its ascii-code, and then executes the operation and returns the result.</summary>
         public double? Execute(double firstN, double secondN, int operandAsciiCode)
         {
             double? result = null;
